@@ -23,6 +23,7 @@ export interface DropdownProps<T> {
   itemTestIDField?: string;
   style?: StyleProp<ViewStyle>;
   containerStyle?: StyleProp<ViewStyle>;
+  placeholderNumberOfLines?: number;
   placeholderStyle?: StyleProp<TextStyle>;
   selectedTextStyle?: StyleProp<TextStyle>;
   selectedTextProps?: TextProps;

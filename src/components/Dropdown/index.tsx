@@ -50,6 +50,7 @@ const DropdownComponent = React.forwardRef<IDropdownRef, DropdownProps<any>>(
       onChange,
       style = {},
       containerStyle,
+      placeholderNumberOfLines,
       placeholderStyle,
       selectedTextStyle,
       itemContainerStyle,
@@ -452,6 +453,7 @@ const DropdownComponent = React.forwardRef<IDropdownRef, DropdownProps<any>>(
           <View style={styles.dropdown}>
             {renderLeftIcon?.(visible)}
             <Text
+              numberOfLines={placeholderNumberOfLines}
               style={[
                 styles.textItem,
                 isSelected !== null ? selectedTextStyle : placeholderStyle,
